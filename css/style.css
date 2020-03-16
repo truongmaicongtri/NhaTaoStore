@@ -350,13 +350,16 @@
 }
 
 .block-title:after {
-    width: 100px;
     height: 1px;
     background: #34548a;
     content: '';
     display: block;
     position: absolute;
     bottom: -10px;
+}
+
+#item-name:after {
+    width: 100%;
 }
 
 .block.block-pd-sm {
@@ -1094,7 +1097,6 @@
     .navbar-contact {
         display: none;
     }
-
     .owl-buttons div {
         display: none!important;
     }
@@ -1867,9 +1869,8 @@ a.btn-hh-trigger.target-open:after {
 }
 
 .header {
-    padding-top: 20px;
     position: relative;
-    background-color: #f8f8f8;
+    background-color: black;
 }
 
 .hero {
@@ -2072,14 +2073,19 @@ a.btn-hh-trigger.target-open:after {
 }
 
 .navbar-brand {
-    padding: 0;
+    padding: 5px 0;
     margin: 0;
     display: block;
     text-shadow: none;
     line-height: 1;
-    height: 110px;
+    height: 70px;
     width: 100%;
     align-items: center;
+}
+
+.navbar-seachbar {
+    height: 70px;
+    padding-top: 13px;
 }
 
 .navbar-contact {
@@ -2199,16 +2205,17 @@ a.btn-hh-trigger.target-open:after {
 
 @media (min-width: 992px) {
     .navbar-default .navbar-nav li>a:not(.btn) {
-        height: 60px;
+        height: 68px;
         padding: 20px 40px;
+        padding-top: 5px;
     }
 }
 
 @media (min-width: 1200px) {
     .navbar-default .navbar-nav li>a:not(.btn) {
-        height: 60px;
+        height: 58px;
         line-height: 60px;
-        padding: 0 57px;
+        padding: 0 25px;
     }
 }
 
@@ -2839,4 +2846,39 @@ ul.nav-tabs.nav-tabs-right>li:last-child {
     background-color: #000000;
     background-position: right center no-repeat;
     background-attachment: fixed;
+}
+
+.item-img {
+    margin-bottom: 20px;
+}
+
+.mini-img {
+    border: solid 1px black;
+    border-radius: 8px;
+}
+
+.item-price {
+    font-size: 25px;
+    font-weight: bolder;
+    color: rgb(245, 114, 36);
+}
+
+.item-color {
+    font-size: 15px;
+    font-weight: bolder;
+    color: rgb(245, 114, 36);
+    top: -3px;
+    position: relative;
+}
+
+.btn-outline-primary {
+    width: 100%;
+}
+
+.item-detail .row div {
+    padding: 0 5px;
+}
+
+.item-detail {
+    padding-top: 100px;
 }
