@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Nhà Táo Store</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900" rel="stylesheet">
+
+    <!-- Bootstrap CSS File -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Libraries CSS Files -->
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/owl.theme.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/owl.transitions.min.css" rel="stylesheet">
+
+    <!-- Main Stylesheet File -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Shortcut icon -->
+    <link href="./img/icon/shortcut-icon.png" rel="shortcut icon" type="image/x-icon">
+
+</head>
+
+<body class="page-index has-hero">
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                xfbml: true,
+                version: 'v6.0'
+            });
+        };
+
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+
+    <!-- Your customer chat code -->
+    <div class="fb-customerchat" attribution=setup_tool page_id="107694280859369" theme_color="#44bec7"
+        logged_in_greeting="hi there" logged_out_greeting="hi there">
+    </div>
+
+    <!-- ======== @Region: #header ======== -->
+
+    <div id="background-wrapper" class="buildings" data-stellar-background-ratio="0.1">
+        <div id="navigation" class="wrapper">
+            <!--Header & navbar-branding region-->
+            <div class="header">
+                <div class="header-inner container">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-4">
+                            <div class="navbar-contact">
+                                <img src="img/phone_number.png" alt="SDT" style="margin: auto">
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4">
+                            <a class="navbar-brand" href="index.html" title="Home">
+                                <img src="img/logo.png" alt="Nha Tao Logo" style="margin: auto">
+                            </a>
+                        </div>
+                        <!--header rightside-->
+                        <div class="col-md-4 col-sm-4">
+                            <div class="social-media social-media-inline pull-right">
+                                <!--@todo: replace with company social media details-->
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                                <a href="#"><i class="fa fa-google-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="hero" id="highlighted">
+            <div class="inner">
+                <!--Slideshow-->
+                <div id="highlighted-slider" class="container">
+                    <div class="item-slider" data-toggle="owlcarousel"
+                        data-owlcarousel-settings='{"singleItem":true, "navigation":true, "transitionStyle":"fadeUp"}'>
+                        <!--Slideshow content-->
+                        <!--Slide 1-->
+                        <div class="item">
+                            <div class="row">
+                                <div class="col-md-6 hidden-xs">
+                                    <img src="img/slides/slide1.jpg" alt="Slide 1" height="250px"
+                                        class="center-block img-responsive" style="border-radius: 15px;">
+                                </div>
+                                <div class="col-md-6 item-caption">
+                                    <h2 class="h2 text-weight-light">
+                                        Chào mừng bạn đến với
+                                        <span class="text-secondary">Nhà Táo</span>
+                                    </h2>
+                                    <h4>
+                                        Hệ thống bán lẻ điện thoại iPhone, iPad, Macbook, phụ kiện chính hãng mới nhất,
+                                        giá tốt
+                                    </h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget felis eu enim
+                                        interdum viverra. Aenean lorem sapien, ornare vitae sollicitudin at, fringilla
+                                        eu dolor. Vivamus lorem arcu, molestie eu laoreet eget,
+                                        convallis eget arcu. Praesent interdum purus eu metus interdum, vel eleifend
+                                        enim tincidunt.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Slide 2-->
+                        <div class="item">
+                            <div class="row">
+                                <div class="col-md-6 text-right-md item-caption">
+                                    <h2 class="h2 text-weight-light">
+                                        Chào mừng bạn đến với
+                                        <span class="text-secondary">Nhà Táo</span>
+                                    </h2>
+                                    <h4>
+                                        Hệ thống bán lẻ điện thoại iPhone, iPad, Macbook, phụ kiện chính hãng mới nhất,
+                                        giá tốt
+                                    </h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget felis eu enim
+                                        interdum viverra. Aenean lorem sapien, ornare vitae sollicitudin at, fringilla
+                                        eu dolor. Vivamus lorem arcu, molestie eu laoreet eget,
+                                        convallis eget arcu. Praesent interdum purus eu metus interdum, vel eleifend
+                                        enim tincidunt.
+                                    </p>
+                                    <a href="#" class="btn btn-more btn-lg"
+                                        style="padding-left: 10px; margin-left: 20px;"> Tìm hiểu thêm</a>
+                                </div>
+                                <div class="col-md-6 hidden-xs">
+                                    <img src="img/slides/slide1.jpg" alt="Slide 1" height="250px"
+                                        class="center-block img-responsive" style="border-radius: 15px;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ======== /header ======== -->
+
+    <!-- ======== @Region: #content ======== -->
+    <div id="content">
+        <div class="container">
+            <div class="navbar navbar-default">
+                <!--mobile collapse menu button-->
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target=".navbar-collapse" aria-expanded="false"> <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+                </button>
+                <!--everything within this div is collapsed on mobile-->
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav" id="main-menu">
+                        <li><a href="./index.html?category=iphone">iPhone</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav" id="main-menu">
+                        <li><a href="./index.html?category=ipad">iPad</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav" id="main-menu">
+                        <li><a href="./index.html?category=macbook">Macbook</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav" id="main-menu">
+                        <li><a href="./index.html?category=apple-watch">Apple Watch</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav" id="main-menu">
+                        <li><a href="./index.html?category=phu-kien">Phụ Kiện Apple</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav" id="main-menu">
+                        <li><a href="./index.html?category=may-99">Máy 99%</a></li>
+                    </ul>
+                </div>
+                <!--/.navbar-collapse -->
+            </div>
+        </div>
+        <!--Showcase-->
+        <div class="showcase block-border-bottom-grey">
+            <div class="container">
+                <h2 class="block-title">
+                    Sản phẩm
+                </h2>
+                <div class="row" id="list-item">
+                    <!-- items will be showed in here -->
+                </div>
+            </div>
+        </div>
+        <!-- Services -->
+        <div class="services block block-bg-gradient block-border-bottom">
+            <div class="container">
+                <h2 class="block-title">
+                    Dịch vụ
+                </h2>
+                <div class="row">
+                    <div class="col-md-4 text-center">
+                        <span class="fa-stack fa-5x">
+                            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fa fa-group fa-stack-1x fa-inverse"></i> </span>
+                        <h4 class="text-weight-strong">
+                            Phương châm làm hài lòng khách hàng
+                        </h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget felis eu enim interdum
+                            viverra. Aenean lorem sapien, ornare vitae sollicitudin at, fringilla eu dolor.</p>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <span class="fa-stack fa-5x">
+                            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fa fa-pencil fa-stack-1x fa-inverse"></i> </span>
+                        <h4 class="text-weight-strong">
+                            Giao hàng tận nơi
+                        </h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget felis eu enim interdum
+                            viverra. Aenean lorem sapien, ornare vitae sollicitudin at, fringilla eu dolor.</p>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <span class="fa-stack fa-5x">
+                            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fa fa-cogs fa-stack-1x fa-inverse"></i> </span>
+                        <h4 class="text-weight-strong">
+                            Bảo hành tiêu chuẩn / Sửa chữa chuyên nghiệp
+                        </h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget felis eu enim interdum
+                            viverra. Aenean lorem sapien, ornare vitae sollicitudin at, fringilla eu dolor.</p>
+                        <a href="./warranty-policy.html" class="btn btn-more btn-lg" style="padding-left: 10px"> Tìm
+                            hiểu thêm</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /content -->
+        <!-- ======== @Region: #footer ======== -->
+        <footer id="footer" class="block block-bg-grey-dark" data-block-bg-img="img/bg_footer-map.jpg"
+            data-stellar-background-ratio="0.4">
+            <div class="container">
+                <div class="row" id="contact">
+                    <div class="col-md-5 col-sm-7 col-xs-6">
+                        <address>
+                            <strong>Địa chỉ của Nhà táo</strong>
+                            <br>
+                            <i class="fa fa-map-pin fa-fw text-primary"></i> 40A, Đường số 6, P.10, Q.Tân Bình, TPHCM
+                            <br>
+                            <i class="fa fa-phone fa-fw text-primary"></i> 093 8883555
+                            <br>
+                            <i class="fa fa-envelope-o fa-fw text-primary"></i> nhataostore@gmail.com
+                            <br>
+                        </address>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-6">
+                        <h4 class="text-uppercase">
+                            THEO DÕI NHÀ TÁO TRÊN:
+                        </h4>
+                        <!--social media icons-->
+                        <div class="social-media social-media-stacked">
+                            <!--@todo: replace with company social media details-->
+                            <a href="#"><i class="fa fa-twitter fa-fw"></i> Twitter</a>
+                            <a href="#"><i class="fa fa-facebook fa-fw"></i> Facebook</a>
+                            <a href="#"><i class="fa fa-linkedin fa-fw"></i> LinkedIn</a>
+                            <a href="#"><i class="fa fa-google-plus fa-fw"></i> Google+</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- ======== /footer ======== -->
+
+        <!-- Required JavaScript Libraries -->
+        <script src="lib/jquery/jquery.min.js"></script>
+        <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/stellar/stellar.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/counterup/counterup.min.js"></script>
+
+        <!-- Custom Javascript File -->
+        <script src="js/custom.js"></script>
+
+        <!-- js File -->
+        <script src="js/index.js"></script>
+        <script src="js/data.js"></script>
+
+
+</body>
+
+</html>
