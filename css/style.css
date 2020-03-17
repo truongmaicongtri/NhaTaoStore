@@ -1074,7 +1074,7 @@
 
 @media (min-width: 1200px) {
     .hero {
-        padding: 30px;
+        padding: 5px;
     }
 }
 
@@ -1874,7 +1874,7 @@ a.btn-hh-trigger.target-open:after {
 }
 
 .hero {
-    background-color: #34548a;
+    background-color: black;
     box-shadow: 0 1px 4px 0 rgba(102, 98, 98, 0.4);
 }
 
@@ -2205,15 +2205,15 @@ a.btn-hh-trigger.target-open:after {
 
 @media (min-width: 992px) {
     .navbar-default .navbar-nav li>a:not(.btn) {
-        height: 68px;
-        padding: 20px 40px;
-        padding-top: 5px;
+        height: 53px;
+        line-height: 60px;
+        padding: 0px 15px;
     }
 }
 
 @media (min-width: 1200px) {
     .navbar-default .navbar-nav li>a:not(.btn) {
-        height: 58px;
+        height: 53px;
         line-height: 60px;
         padding: 0 25px;
     }
