@@ -1,12 +1,23 @@
 var vars = getUrlVars();
+var items;
+
 
 $(document).ready(function() {
-    var items = getData();
+    items = getData();
+    var showingItem;
+
     var category = vars['category'];
+    var searchString = vars['search'];
     if (category) {
-        items = items.filter((item) => item.category == category);
+        showingItem = items.filter((item) => item.category == category);
+        showItem(showingItem);
     }
-    showItem(items);
+    if (searchString) {
+        showingItem = items.filter((item) => item.name.includes("searchString"));
+        showItem(showingItem);
+    } else {
+        showItem(items);
+    }
 });
 
 
@@ -14,7 +25,7 @@ function showItem(items) {
     var listItem = document.getElementById('list-item');
     var string = '';
     items.forEach(item => {
-        string += `<div class="item col-md-2 col-sm-4 col-xs-6">
+        string += `<div class="item col-md-2 col-sm-4 col-xs-4">
         <a href="./detail.html?itemId=${item.id}" class="overlay-wrapper">
             <img src="${item.imageUrl}" alt="${item.name} image" class="img-responsive underlay">
             <span class="overlay">
@@ -37,4 +48,12 @@ function getUrlVars() {
         vars[key] = value;
     });
     return vars;
+}
+
+function searchItem() {
+    var searchString = document.getElementById("search-input").value;
+    if (searchString) {
+        showingItem = items.filter((item) => item.name.includes("searchString"));
+        showItem(showingItem);
+    }
 }

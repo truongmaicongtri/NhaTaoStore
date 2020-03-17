@@ -1,3 +1,7 @@
+var items;
+
 $(document).ready(function() {
-    $('.carousel').carousel();
+    items = getData();
+
+
 });

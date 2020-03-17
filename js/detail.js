@@ -1,7 +1,9 @@
 var vars = getUrlVars();
+var categoryNames = ["iphone", "ipad", "macbook", "apple-watch", "phu-kien", "may-99"];
+var items;
 
 $(document).ready(function() {
-    let items = getData();
+    items = getData();
     var itemId = vars['itemId'];
     var selectedItem;
     if (itemId) {
@@ -9,7 +11,6 @@ $(document).ready(function() {
     }
     showItem(selectedItem);
 });
-
 
 function showItem(item) {
     // var listItem = document.getElementById('item');
