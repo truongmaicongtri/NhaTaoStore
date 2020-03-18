@@ -155,58 +155,36 @@
                 <div id="item">
                     <div class="col-md-5 item-img-container">
                         <div class="item-img">
-                            <img src="img/showcase/item1.jpg" width="500">
+                            <img id="item-image" src="img/showcase/item1.jpg" width="500">
                         </div>
-                        <div class="row">
-                            <div class="col-md-3">
-                                <img class="mini-img" src="img/showcase/item1.jpg">
+                        <div id="mini-imgs" class="row">
+                            <div class="col-md-3 col-sm-3 col-xs-3 mini-img-div">
+                                <img class="mini-img" onclick=changeItemImage(this.src)>
                             </div>
-                            <div class="col-md-3">
-                                <img class="mini-img" src="img/showcase/item1.jpg">
+                            <div class="col-md-3 col-sm-3 col-xs-3 mini-img-div">
+                                <img class="mini-img" onclick=changeItemImage(this.src)>
                             </div>
-                            <div class="col-md-3">
-                                <img class="mini-img" src="img/showcase/item1.jpg">
+                            <div class="col-md-3 col-sm-3 col-xs-3 mini-img-div">
+                                <img class="mini-img" onclick=changeItemImage(this.src)>
                             </div>
-                            <div class="col-md-3">
-                                <img class="mini-img" src="img/showcase/item1.jpg">
+                            <div class="col-md-3 col-sm-3 col-xs-3 mini-img-div">
+                                <img class="mini-img" onclick=changeItemImage(this.src)>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-7 item-detail">
                         <div style="margin-bottom: 10px;">
-                            <span class="item-price">15,000,000 VND</span><span class="item-color"> (Màu Xanh)</span>
+                            <span id="item-price" class="item-price">15,000,000 VND</span><span id="item-color" class="item-color"> (Màu Xanh)</span>
                         </div>
-
-                        <div class="row">
-                            <div class="col-md-3" style="height: 34px; padding-top: 8px; padding-left: 30px;">
-                                <p> Chọn màu sắc:</p>
-                            </div>
-                            <div class="col-md-2">
-                                <button type="button" class="btn btn-outline-primary">Đỏ</button>
-                            </div>
-                            <div class="col-md-2">
-                                <button type="button" class="btn btn-outline-primary">Vàng</button>
-                            </div>
-                            <div class="col-md-2">
-                                <button type="button" class="btn btn-outline-primary">Xanh</button>
-                            </div>
-                            <div class="col-md-2">
-                                <button type="button" class="btn btn-outline-primary">Tím</button>
-                            </div>
+                        <div class="col-md-12 col-sm-12" style="height: 34px; padding-top: 8px; padding-left: 10px;">
+                            <p> Chọn màu sắc:</p>
                         </div>
-
-                        <div class="row" style="margin-top: 10px;">
-                            <div class="col-md-3" style="height: 34px; padding-top: 8px; padding-left: 30px;">
-                                <p> Chọn phiên bản:</p>
-                            </div>
-                            <div class="col-md-1">
-                            </div>
-                            <div class="col-md-2">
-                                <button type="button" class="btn btn-outline-primary">64GB</button>
-                            </div>
-                            <div class="col-md-2">
-                                <button type="button" class="btn btn-outline-primary">128GB</button>
-                            </div>
+                        <div id="colors" class="row">
+                        </div>
+                        <div class="col-md-12 col-sm-12" style="height: 34px; padding-left: 10px; margin-top: 20px;">
+                            <p> Chọn phiên bản:</p>
+                        </div>
+                        <div id="storages" class="row">
                         </div>
 
                         <div class>

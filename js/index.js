@@ -13,7 +13,7 @@ $(document).ready(function() {
         showItem(showingItem);
     }
     if (searchString) {
-        showingItem = items.filter((item) => item.name.includes(searchString));
+        showingItem = items.filter((item) => item.name.toLowerCase().split(" ").join("-").includes(searchString));
         showItem(showingItem);
     } else {
         showItem(items);
@@ -27,7 +27,7 @@ function showItem(items) {
     items.forEach(item => {
         string += `<div class="item col-md-2 col-sm-4 col-xs-4">
         <a href="./detail.html?itemId=${item.id}" class="overlay-wrapper">
-            <img src="${item.imageUrl}" alt="${item.name} image" class="img-responsive underlay">
+            <img src="${item.imageUrl[0]}" alt="${item.name} image" class="img-responsive underlay">
             <span class="overlay">
                 <span class="overlay-content"> <span class="h4">Chi tiết</span> </span>
             </span>

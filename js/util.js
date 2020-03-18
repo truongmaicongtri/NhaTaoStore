@@ -44,7 +44,8 @@ function gotoDetail(itemId) {
 }
 
 
-function searchItem(){
+function searchItem() {
     var searchString = document.getElementById("search-input").value;
+    searchString = searchString.toLowerCase().split(" ").join("-");
     window.location = "./index.html?search=" + searchString;
 }
