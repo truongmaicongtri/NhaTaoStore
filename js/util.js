@@ -42,3 +42,9 @@ function renderItemsForHiddenDiv(hiddenDiv, categoryName) {
 function gotoDetail(itemId) {
     window.location = "./detail.html?itemId=" + itemId;
 }
+
+
+function searchItem(){
+    var searchString = document.getElementById("search-input").value;
+    window.location = "./index.html?search=" + searchString;
+}

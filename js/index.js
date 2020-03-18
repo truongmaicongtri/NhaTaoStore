@@ -13,7 +13,7 @@ $(document).ready(function() {
         showItem(showingItem);
     }
     if (searchString) {
-        showingItem = items.filter((item) => item.name.includes("searchString"));
+        showingItem = items.filter((item) => item.name.includes(searchString));
         showItem(showingItem);
     } else {
         showItem(items);
