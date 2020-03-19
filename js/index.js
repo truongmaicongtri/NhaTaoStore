@@ -25,7 +25,7 @@ function showItem(items) {
     var listItem = document.getElementById('list-item');
     var string = '';
     items.forEach(item => {
-        string += `<div class="item col-md-2 col-sm-4 col-xs-4">
+        string += `<div class="item col-md-2 col-sm-4 col-xs-4" style="min-height:250px">
         <a href="./detail.html?itemId=${item.id}" class="overlay-wrapper">
             <img src="${item.imageUrl[0]}" alt="${item.name} image" class="img-responsive underlay">
             <span class="overlay">
@@ -35,6 +35,9 @@ function showItem(items) {
         <div class="item-details bg-noise">
             <h4 class="item-title">
                 <a href="./detail.html?itemId=${item.id}">${item.name}</a>
+            </h4>
+            <h4 class="item-title">
+                <h5 class="item-title">${item.prices[0].price}</h5>
             </h4>
         </div>
     </div>`
