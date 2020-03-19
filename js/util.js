@@ -43,6 +43,14 @@ function gotoDetail(itemId) {
     window.location = "./detail.html?itemId=" + itemId;
 }
 
+function getUrlVars() {
+    var vars = {};
+    var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m, key, value) {
+        vars[key] = value;
+    });
+    return vars;
+}
+
 
 function searchItem() {
     var searchString = document.getElementById("search-input").value;

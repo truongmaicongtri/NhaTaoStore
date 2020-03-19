@@ -11,8 +11,7 @@ $(document).ready(function() {
     if (category) {
         showingItem = items.filter((item) => item.category == category);
         showItem(showingItem);
-    }
-    if (searchString) {
+    } else if (searchString) {
         showingItem = items.filter((item) => item.name.toLowerCase().split(" ").join("-").includes(searchString));
         showItem(showingItem);
     } else {
