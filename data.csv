@@ -1,0 +1,123 @@
+Category;Name;ImageUrl_1;ImageUrl_2;ImageUrl_3;ImageUrl_4;Color;Storage;Price
+iphone;IPhone 11;img/showcase/item1.jpg;img/showcase/item2.jpg;img/showcase/item3.jpg;img/showcase/item4.jpg;;;
+;;;;;;Đỏ;64GB;15.100.000
+;;;;;;Vàng;64GB;15.200.000
+;;;;;;Xanh;64GB;15.300.000
+;;;;;;Tím;64GB;15.400.000
+;;;;;;Đỏ;128GB;15.500.000
+;;;;;;Vàng;128GB;15.600.000
+;;;;;;Xanh;128GB;15.700.000
+iphone;IPhone 11 Pro;img/showcase/item2.jpg;img/showcase/item2.jpg;img/showcase/item3.jpg;img/showcase/item4.jpg;;;
+;;;;;;Đỏ;64GB;15.100.000
+;;;;;;Vàng;64GB;15.200.000
+;;;;;;Xanh;64GB;15.300.000
+;;;;;;Tím;64GB;15.400.000
+;;;;;;Đỏ;128GB;15.500.000
+;;;;;;Vàng;128GB;15.600.000
+;;;;;;Xanh;128GB;15.700.000
+iphone;IPhone 11 Pro Max;img/showcase/item3.jpg;img/showcase/item2.jpg;img/showcase/item3.jpg;img/showcase/item4.jpg;;;
+;;;;;;Đỏ;64GB;15.100.000
+;;;;;;Vàng;64GB;15.200.000
+;;;;;;Xanh;64GB;15.300.000
+;;;;;;Tím;64GB;15.400.000
+;;;;;;Đỏ;128GB;15.500.000
+;;;;;;Vàng;128GB;15.600.000
+;;;;;;Xanh;128GB;15.700.000
+;;;;;;Tím;128GB;15.800.000
+iphone;Iphone 9;img/showcase/item4.jpg;img/showcase/item2.jpg;img/showcase/item3.jpg;img/showcase/item4.jpg;;;
+;;;;;;Đỏ;64GB;15.100.000
+;;;;;;Vàng;64GB;15.200.000
+;;;;;;Xanh;64GB;15.300.000
+;;;;;;Tím;64GB;15.400.000
+;;;;;;Đỏ;128GB;15.500.000
+;;;;;;Vàng;128GB;15.600.000
+;;;;;;Xanh;128GB;15.700.000
+;;;;;;Tím;128GB;15.800.000
+iphone;IPhone 8 Plus;img/showcase/item1.jpg;img/showcase/item2.jpg;img/showcase/item3.jpg;img/showcase/item4.jpg;;;
+;;;;;;Đỏ;64GB;15.100.000
+;;;;;;Vàng;64GB;15.200.000
+;;;;;;Xanh;64GB;15.300.000
+;;;;;;Tím;64GB;15.400.000
+;;;;;;Đỏ;128GB;15.500.000
+;;;;;;Vàng;128GB;15.600.000
+;;;;;;Xanh;128GB;15.700.000
+;;;;;;Tím;128GB;15.800.000
+iphone;IPhone 8;img/showcase/item2.jpg;img/showcase/item2.jpg;img/showcase/item3.jpg;img/showcase/item4.jpg;;;
+;;;;;;Đỏ;64GB;15.100.000
+;;;;;;Vàng;64GB;15.200.000
+;;;;;;Xanh;64GB;15.300.000
+;;;;;;Tím;64GB;15.400.000
+;;;;;;Đỏ;128GB;15.500.000
+;;;;;;Vàng;128GB;15.600.000
+;;;;;;Xanh;128GB;15.700.000
+;;;;;;Tím;128GB;15.800.000
+iphone;Iphone 7 Plus;img/showcase/item3.jpg;img/showcase/item2.jpg;img/showcase/item3.jpg;img/showcase/item4.jpg;;;
+;;;;;;Đỏ;64GB;15.100.000
+;;;;;;Vàng;64GB;15.200.000
+;;;;;;Xanh;64GB;15.300.000
+;;;;;;Tím;64GB;15.400.000
+;;;;;;Đỏ;128GB;15.500.000
+;;;;;;Vàng;128GB;15.600.000
+;;;;;;Xanh;128GB;15.700.000
+;;;;;;Tím;128GB;15.800.000
+iphone;Iphone 6S Plus;img/showcase/item4.jpg;img/showcase/item2.jpg;img/showcase/item3.jpg;img/showcase/item4.jpg;;;
+;;;;;;Đỏ;64GB;15.100.000
+;;;;;;Vàng;64GB;15.200.000
+;;;;;;Xanh;64GB;15.300.000
+;;;;;;Tím;64GB;15.400.000
+;;;;;;Đỏ;128GB;15.500.000
+;;;;;;Vàng;128GB;15.600.000
+;;;;;;Xanh;128GB;15.700.000
+;;;;;;Tím;128GB;15.800.000
+macbook;Macbook Pro 2016;img/showcase/macbook1.jpg;img/showcase/macbook2.jpg;img/showcase/macbook3.jpg;img/showcase/macbook4.jpg;;;
+;;;;;;Silver;128GB;25.100.000
+;;;;;;Gray;128GB;25.200.000
+;;;;;;Silver;256GB;25.300.000
+;;;;;;Gray;256GB;25.400.000
+;;;;;;Silver;512GB;25.500.000
+;;;;;;Gray;512GB;25.600.000
+macbook;Macbook Pro 2017;img/showcase/macbook2.jpg;img/showcase/macbook2.jpg;img/showcase/macbook3.jpg;img/showcase/macbook4.jpg;;;
+;;;;;;Silver;128GB;26.100.000
+;;;;;;Gray;128GB;27.200.000
+;;;;;;Silver;256GB;28.300.000
+;;;;;;Gray;256GB;29.400.000
+;;;;;;Silver;512GB;30.500.000
+;;;;;;Gray;512GB;31.600.000
+macbook;Macbook Pro 2018;img/showcase/macbook3.jpg;img/showcase/macbook2.jpg;img/showcase/macbook3.jpg;img/showcase/macbook4.jpg;;;
+;;;;;;Silver;128GB;27.200.000
+;;;;;;Gray;128GB;28.300.000
+;;;;;;Silver;256GB;29.400.000
+;;;;;;Gray;256GB;30.500.000
+;;;;;;Silver;512GB;31.600.000
+;;;;;;Gray;512GB;32.000.000
+macbook;Macbook Pro 2019;img/showcase/macbook4.jpg;img/showcase/macbook2.jpg;img/showcase/macbook3.jpg;img/showcase/macbook4.jpg;;;
+;;;;;;Silver;128GB;32.000.000
+;;;;;;Gray;128GB;32.000.000
+;;;;;;Silver;256GB;32.000.000
+;;;;;;Gray;256GB;32.000.000
+;;;;;;Silver;512GB;32.000.000
+;;;;;;Gray;512GB;32.000.000
+ipad;Ipad Air;img/showcase/ipad1.jpg;img/showcase/ipad2.jpg;img/showcase/ipad3.jpg;img/showcase/ipad4.jpg;;;
+;;;;;;Đen;128GB;32.000.000
+;;;;;;Trắng;128GB;32.000.000
+;;;;;;Đen;256GB;32.000.000
+;;;;;;Trắng;256GB;32.000.000
+ipad;Ipad Pro;img/showcase/ipad4.jpg;img/showcase/ipad2.jpg;img/showcase/ipad3.jpg;img/showcase/ipad4.jpg;;;
+;;;;;;Đen;128GB;32.000.000
+;;;;;;Trắng;128GB;32.000.000
+;;;;;;Đen;256GB;32.000.000
+;;;;;;Trắng;256GB;32.000.000
+apple-watch;AW serial 5;img/showcase/ipad4.jpg;img/showcase/ipad2.jpg;img/showcase/ipad3.jpg;img/showcase/ipad4.jpg;;;
+;;;;;;Đen;128GB;32.000.000
+;;;;;;Trắng;128GB;32.000.000
+;;;;;;Đen;256GB;32.000.000
+;;;;;;Trắng;256GB;32.000.000
+phu-kien;Phu kien ???;img/showcase/ipad4.jpg;img/showcase/ipad2.jpg;img/showcase/ipad3.jpg;img/showcase/ipad4.jpg;;;
+;;;;;;Đen;128GB;32.000.000
+;;;;;;Trắng;128GB;32.000.000
+;;;;;;Đen;256GB;32.000.000
+;;;;;;Trắng;256GB;32.000.000
+may-99;Macbook Pro 2019 99%;img/showcase/macbook4.jpg;img/showcase/macbook2.jpg;img/showcase/macbook3.jpg;img/showcase/macbook4.jpg;;;
+;;;;;;Silver;128GB;32.000.000
+;;;;;;Silver;256GB;32.000.000
+;;;;;;Silver;512GB;32.000.000
