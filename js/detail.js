@@ -101,8 +101,10 @@ function reloadColor() {
     var buttons = document.getElementsByClassName("btn-color");
     Array.prototype.forEach.call(buttons, function(button) {
         button.disabled = false;
+        button.style.borderColor = "gray";
         if (missingColors.includes(button.innerText)) {
             button.disabled = true;
+            button.style.borderColor = "#ffffff";
         }
     });
 }
@@ -121,8 +123,10 @@ function reloadStorage() {
     var buttons = document.getElementsByClassName("btn-storage");
     Array.prototype.forEach.call(buttons, function(button) {
         button.disabled = false;
+        button.style.borderColor = "gray";
         if (missingStorages.includes(button.innerText)) {
             button.disabled = true;
+            button.style.borderColor = "#ffffff";
         }
     });
 }
@@ -142,9 +146,9 @@ function changeItemImage(imgSrc) {
 
 function selectColor(element) {
     if (selectedColor) {
-        selectedColor.style.borderColor = "gray";
+        selectedColor.style.backgroundColor = "#f0f0f0";
     }
-    element.style.borderColor = "blue";
+    element.style.backgroundColor = "#abc8f5";
     selectedColor = element;
 
     reloadStorage();
@@ -153,9 +157,9 @@ function selectColor(element) {
 
 function selectStorage(element) {
     if (selectedStorage) {
-        selectedStorage.style.borderColor = "gray";
+        selectedStorage.style.backgroundColor = "#f0f0f0";
     }
-    element.style.borderColor = "blue";
+    element.style.backgroundColor = "#abc8f5";
     selectedStorage = element;
 
     reloadColor();

@@ -1065,6 +1065,10 @@
     overflow: hidden;
 }
 
+#list-item div:first {
+    min-height: 250px;
+}
+
 @media (min-width: 960px) {
     .hero {
         padding-top: 20px;
@@ -1120,6 +1124,25 @@
     }
     #main-menu div {
         display: none;
+    }
+    .fa-circle {
+        font-size: 100px;
+    }
+    .fa-inverse {
+        line-height: 100px;
+        font-size: 40px;
+    }
+    .fa-stack{
+        height: 100px;
+    }
+    #list-item div:first {
+        min-height: 180px;
+    }
+    h4 {
+        font-size: 15px!important;
+    }
+    h2 {
+        font-size: 24px!important;
     }
 }
 
@@ -1239,6 +1262,7 @@
 
 .item-title {
     text-align: center;
+    height: 33px;
 }
 
 .item-carousel .item-details .item-title {
@@ -3025,13 +3049,16 @@ ul.nav-tabs.nav-tabs-right>li:last-child {
 .btn-color {
     outline: none!important;
     border-color: gray;
+    background-color: #f0f0f0;
 }
 
 .btn-storage {
     outline: none!important;
     border-color: gray;
+    background-color: #f0f0f0;
 }
 
 .fa-stack {
     position: unset;
+    width: unset;
 }
