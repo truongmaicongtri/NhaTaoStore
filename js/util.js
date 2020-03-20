@@ -4,6 +4,11 @@ var items;
 
 
 $(document).ready(function() {
+    loadDataFromCSV(loadNavigation);
+    
+});
+
+function loadNavigation(){
     items = getData();
 
     if (items) {
@@ -24,7 +29,7 @@ $(document).ready(function() {
             $(this).css("visibility", "hidden");
         });
     }
-});
+}
 
 
 function renderItemsForHiddenDiv(hiddenDiv, categoryName) {

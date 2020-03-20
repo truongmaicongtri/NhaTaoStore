@@ -9,6 +9,10 @@ var selectedColor;
 var selectedStorage;
 
 $(document).ready(function() {
+    loadDataFromCSV(loadItemAndButtons);
+});
+
+function loadItemAndButtons(){
     items = getData();
     var itemId = vars['itemId'];
     if (itemId) {
@@ -30,7 +34,7 @@ $(document).ready(function() {
     showColor();
     showStorage();
     loadItemColorText();
-});
+}
 
 function showItem(item) {
     var itemImage = document.getElementById('item-image');

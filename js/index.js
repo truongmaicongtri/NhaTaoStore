@@ -3,6 +3,11 @@ var items;
 
 
 $(document).ready(function() {
+    loadDataFromCSV(loadMenu);
+});
+
+
+function loadMenu(){
     items = getData();
 
     if (items) {
@@ -20,7 +25,7 @@ $(document).ready(function() {
             showItem(items);
         }
     }
-});
+}
 
 
 function showItem(items) {
