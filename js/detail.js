@@ -138,7 +138,7 @@ function changeItemImage(imgSrc) {
 
 function selectColor(element) {
     if (selectedColor) {
-        selectedColor.style.borderColor = "white";
+        selectedColor.style.borderColor = "gray";
     }
     element.style.borderColor = "blue";
     selectedColor = element;
@@ -149,7 +149,7 @@ function selectColor(element) {
 
 function selectStorage(element) {
     if (selectedStorage) {
-        selectedStorage.style.borderColor = "white";
+        selectedStorage.style.borderColor = "gray";
     }
     element.style.borderColor = "blue";
     selectedStorage = element;

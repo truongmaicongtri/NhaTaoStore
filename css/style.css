@@ -1112,6 +1112,9 @@
     .text-center p {
         display: none;
     }
+    .service-title{
+        font-size: 10px!important;
+    }
     .text-center a {
         display: none;
     }
@@ -3021,8 +3024,14 @@ ul.nav-tabs.nav-tabs-right>li:last-child {
 
 .btn-color {
     outline: none!important;
+    border-color: gray;
 }
 
 .btn-storage {
     outline: none!important;
+    border-color: gray;
+}
+
+.fa-stack {
+    position: unset;
 }

@@ -6,22 +6,24 @@ var items;
 $(document).ready(function() {
     items = getData();
 
-    categoryNames.forEach(categoryName => {
-        var hiddenDiv = document.getElementById(categoryName);
-        renderItemsForHiddenDiv(hiddenDiv, categoryName);
-    });
+    if (items) {
+        categoryNames.forEach(categoryName => {
+            var hiddenDiv = document.getElementById(categoryName);
+            renderItemsForHiddenDiv(hiddenDiv, categoryName);
+        });
 
-    $('#main-menu a').hover(function() {
-        $(this).next().css("visibility", "visible");
-    }, function() {
-        $(this).next().css("visibility", "hidden");
-    })
+        $('#main-menu a').hover(function() {
+            $(this).next().css("visibility", "visible");
+        }, function() {
+            $(this).next().css("visibility", "hidden");
+        })
 
-    $('#main-menu div').hover(function() {
-        $(this).css("visibility", "visible");
-    }, function() {
-        $(this).css("visibility", "hidden");
-    });
+        $('#main-menu div').hover(function() {
+            $(this).css("visibility", "visible");
+        }, function() {
+            $(this).css("visibility", "hidden");
+        });
+    }
 });
 
 

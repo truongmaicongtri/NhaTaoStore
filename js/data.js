@@ -1,4 +1,4 @@
-var items = [{
+var data = [{
         name: "IPhone 11",
         imageUrl: [
             "img/showcase/item1.jpg",
@@ -715,10 +715,42 @@ var items = [{
 ];
 
 function getData() {
-    var data = [];
+    var dataObjects;
+    var items1 = [];
+    Papa.parse("http://test.nhataostore.com/csv.csv", {
+        download: true,
+        header: true,
+        complete: function(results) {
+            dataObjects = results;
+            var item;
 
-    items.forEach(item => {
-        data.push({...item, id: item.name.toLowerCase().split(" ").join("-") });
+            dataObjects.data.forEach(object => {
+                if (object.name != "") {
+                    if (item) {
+                        items1.push(item);
+                        item = undefined;
+                    }
+                    item = { name: "", url: [], category: "", prices: [] };
+                    item.name = object.name;
+                    item.category = object.category;
+                    item.url.push(object.imageUrl_1);
+                    item.url.push(object.imageUrl_2);
+                    item.url.push(object.imageUrl_3);
+                    item.url.push(object.imageUrl_4);
+                } else {
+                    item.prices.push({ color: object.color, storage: object.storage, price: object.price });
+                }
+            });
+
+            console.log(items1);
+
+            return items1;
+        }
     });
-    return data;
+
+    var items2 = [];
+    data.forEach(item => {
+        items2.push({...item, id: item.name.toLowerCase().split(" ").join("-") });
+    });
+    return items2;
 }
