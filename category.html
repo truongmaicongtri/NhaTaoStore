@@ -52,6 +52,7 @@
     <!-- Your customer chat code -->
     <div class="fb-customerchat" attribution=setup_tool page_id="107694280859369" theme_color="#44bec7" logged_in_greeting="hi there" logged_out_greeting="hi there">
     </div>
+
     <!-- ======== @Region: #header ======== -->
 
     <div id="background-wrapper" class="buildings" data-stellar-background-ratio="0.1">
@@ -168,81 +169,15 @@
 
     <!-- ======== @Region: #content ======== -->
     <div id="content">
+
         <!--Showcase-->
         <div class="showcase block-border-bottom-grey">
             <div class="container">
                 <h2 class="block-title">
-                    <p id="item-name"></p>
+                    Sản phẩm
                 </h2>
-                <div id="item">
-                    <div class="col-md-4 item-img-container">
-                        <div class="item-img">
-                            <img id="item-image" src="img/showcase/item1.jpg" width="350">
-                        </div>
-                        <div id="mini-imgs" class="row">
-                            <div class="col-md-3 col-sm-3 col-xs-3 mini-img-div">
-                                <img class="mini-img" onclick=changeItemImage(this.src)>
-                            </div>
-                            <div class="col-md-3 col-sm-3 col-xs-3 mini-img-div">
-                                <img class="mini-img" onclick=changeItemImage(this.src)>
-                            </div>
-                            <div class="col-md-3 col-sm-3 col-xs-3 mini-img-div">
-                                <img class="mini-img" onclick=changeItemImage(this.src)>
-                            </div>
-                            <div class="col-md-3 col-sm-3 col-xs-3 mini-img-div">
-                                <img class="mini-img" onclick=changeItemImage(this.src)>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-5 item-detail">
-                        <h2 class="block-title">
-                            <p id="item-name2"></p>
-                        </h2>
-                        <div style="margin-bottom: 10px;">
-                            <span id="item-price" class="item-price">0 VND</span><span id="item-color" class="item-color"> ()</span>
-                        </div>
-                        <div class="col-md-12 col-sm-12" style="height: 34px; padding-top: 8px; padding-left: 10px;">
-                            <p> Chọn màu sắc:</p>
-                        </div>
-                        <div id="colors" class="row">
-                        </div>
-                        <div class="col-md-12 col-sm-12" style="height: 25px; padding-left: 10px; margin-top: 20px;">
-                            <p> Chọn phiên bản:</p>
-                        </div>
-                        <div id="storages" class="row">
-                        </div>
-
-                        <div class>
-
-                        </div>
-                    </div>
-                    <div class="detail-contact col-md-3">
-                        <ul>
-                            <li>
-                                <img class="wp-image-1266 alignnone" src="img/icon/hotline.png" alt="" width="69" height="25"><span style="font-weight: 400; color:lightcoral"> 0933 083 183</span>
-                            </li>
-                        </ul>
-                        <table>
-                            <tbody>
-                                <tr valign="top">
-                                    <td style="width: 25px;"><img class="alignnone size-medium wp-image-1222" src="https://macvn.com.vn/wp-content/uploads/2020/01/tick-300x300.png" alt="" width="300" height="300"></td>
-                                    <td>Giao hàng hỏa tốc được áp dụng</td>
-                                </tr>
-                                <tr valign="top">
-                                    <td style="width: 25px;"><img class="alignnone size-medium wp-image-1222" src="https://macvn.com.vn/wp-content/uploads/2020/01/tick-300x300.png" alt="" width="300" height="300"></td>
-                                    <td>Thanh toán thẻ tiền mặt hoặc chuyển khoản</td>
-                                </tr>
-                                <tr valign="top">
-                                    <td style="width: 25px;"><img class="alignnone size-medium wp-image-1222" src="https://macvn.com.vn/wp-content/uploads/2020/01/tick-300x300.png" alt="" width="300" height="300"></td>
-                                    <td>Thanh toán cà thẻ miễn phí tại cửa hàng</td>
-                                </tr>
-                                <tr valign="top">
-                                    <td style="width: 25px;"><img class="alignnone size-medium wp-image-1222" src="https://macvn.com.vn/wp-content/uploads/2020/01/tick-300x300.png" alt="" width="300" height="300"></td>
-                                    <td>Thanh toán khi nhận hàng</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
+                <div class="row" id="list-item">
+                    <!-- items will be showed in here -->
                 </div>
             </div>
         </div>
@@ -340,9 +275,10 @@
         <script src="js/custom.js"></script>
 
         <!-- js File -->
-        <script src="js/detail.js"></script>
-        <script src="js/util.js"></script>
+        <script src="js/category.js"></script>
         <script src="js/data.js"></script>
+        <script src="js/util.js"></script>
+
 </body>
 
 </html>

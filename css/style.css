@@ -358,8 +358,20 @@
     bottom: -10px;
 }
 
-#item-name:after {
-    width: 100%;
+#item-name {
+    display: initial;
+    border: 1px solid;
+    padding: 2px 10px;
+    border-radius: 10px;
+    font-weight: 400!important;
+}
+
+#item-name2 {
+    border: 1px solid;
+    padding: 2px 10px;
+    border-radius: 10px;
+    font-weight: 400!important;
+    display: none;
 }
 
 .block.block-pd-sm {
@@ -529,6 +541,21 @@
     margin-left: auto;
     padding-left: 15px;
     padding-right: 15px;
+}
+
+.item-price {
+    font-size: 25px;
+    font-weight: bolder;
+    color: rgb(245, 114, 36);
+}
+
+.item-color {
+    font-size: 15px;
+    font-weight: bolder;
+    color: rgb(245, 114, 36);
+    top: -3px;
+    position: relative;
+    margin-left: 5px;
 }
 
 .block-contained:before,
@@ -1016,6 +1043,7 @@
     height: 24px;
     text-align: center;
     display: block;
+    padding-top: 1px!important;
 }
 
 .social-media a:hover {
@@ -1040,7 +1068,6 @@
     color: #34548a;
     text-align: left;
     margin-bottom: 0.5em;
-    font-weight: bold;
 }
 
 .social-media.social-media-stacked a:hover {
@@ -1100,6 +1127,29 @@
     }
 }
 
+.item-detail {
+    margin-top: 30px;
+    padding-right: 30px;
+    padding-left: 0;
+}
+
+.detail-contact {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    margin-top: 60px;
+}
+
+.detail-contact img {
+    display: initial;
+}
+
+.detail-contact li {
+    list-style: none;
+}
+
 @media (max-width: 768px) {
     .social-media.social-media-inline {
         display: none;
@@ -1116,7 +1166,7 @@
     .text-center p {
         display: none;
     }
-    .service-title{
+    .service-title {
         font-size: 10px!important;
     }
     .text-center a {
@@ -1132,7 +1182,7 @@
         line-height: 100px;
         font-size: 40px;
     }
-    .fa-stack{
+    .fa-stack {
         height: 100px;
     }
     #list-item div:first {
@@ -1143,6 +1193,33 @@
     }
     h2 {
         font-size: 24px!important;
+    }
+    #item-name2 {
+        display: initial;
+    }
+    #contact h4 {
+        font-size: 11px!important;
+    }
+    #contact span {
+        font-size: 10px!important;
+    }
+    .social-media.social-media-stacked a {
+        font-size: 10px!important;
+    }
+    .detail-contact {
+        display: none;
+    }
+    .item-detail {
+        margin-top: 30px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .item-price {
+        font-size: 18px;
+    }
+    .item-color {
+        font-size: 15px;
+        top: -1px;
     }
 }
 
@@ -1262,7 +1339,7 @@
 
 .item-title {
     text-align: center;
-    height: 33px;
+    font-size: 12px;
 }
 
 .item-carousel .item-details .item-title {
@@ -1823,6 +1900,8 @@ h4 {
 
 a {
     color: #34548a;
+    font-weight: 500!important;
+    font-size: 12px;
 }
 
 a:hover {
@@ -1963,7 +2042,7 @@ a.btn-hh-trigger.target-open:after {
 }
 
 #footer a:not(.btn) {
-    color: #34548a;
+    color: #999;
 }
 
 #footer .subfooter {
@@ -2446,7 +2525,7 @@ a.btn-hh-trigger.target-open:after {
     }
     #footer {
         padding-bottom: 0px;
-        min-height: 300px;
+        min-height: 250px;
     }
 }
 
@@ -2941,31 +3020,12 @@ ul.nav-tabs.nav-tabs-right>li:last-child {
     padding: 2px;
 }
 
-.item-price {
-    font-size: 25px;
-    font-weight: bolder;
-    color: rgb(245, 114, 36);
-}
-
-.item-color {
-    font-size: 15px;
-    font-weight: bolder;
-    color: rgb(245, 114, 36);
-    top: -3px;
-    position: relative;
-    margin-left: 5px;
-}
-
 .btn-outline-primary {
     width: 100%;
 }
 
 .item-detail .row div {
     padding: 0 5px;
-}
-
-.item-detail {
-    padding-top: 100px;
 }
 
 .item-button {
@@ -3061,4 +3121,30 @@ ul.nav-tabs.nav-tabs-right>li:last-child {
 .fa-stack {
     position: unset;
     width: unset;
+}
+
+#list-category>div {
+    padding: 25px 50px;
+}
+
+#list-category a {
+    font-weight: 500;
+}
+
+#contact i {
+    padding-top: 4px;
+    text-align: center;
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    border: 1px #c4c4c4 solid;
+    margin-right: 10px;
+}
+
+.category-title {
+    text-align: center;
+}
+
+.category-title a {
+    font-size: 18px!important;
 }

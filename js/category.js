@@ -3,22 +3,26 @@ var items;
 
 
 $(document).ready(function() {
-    loadCatogories();
+    loadDataFromCSV(loadMenu);
 });
 
 
-function loadCatogories() {
+function loadMenu(){
     items = getData();
 
     if (items) {
         var showingItem;
+
+        var category = vars['category'];
         var searchString = vars['search'];
-        if (searchString) {
+        if (category) {
+            showingItem = items.filter((item) => item.category == category);
+            showItem(showingItem);
+        } else if (searchString) {
             showingItem = items.filter((item) => item.name.toLowerCase().split(" ").join("-").includes(searchString));
-            // hide category
             showItem(showingItem);
         } else {
-            // hide items, show category
+            showItem(items);
         }
     }
 }

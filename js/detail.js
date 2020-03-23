@@ -12,7 +12,7 @@ $(document).ready(function() {
     loadDataFromCSV(loadItemAndButtons);
 });
 
-function loadItemAndButtons(){
+function loadItemAndButtons() {
     items = getData();
     var itemId = vars['itemId'];
     if (itemId) {
@@ -47,6 +47,8 @@ function showItem(item) {
 
     var itemNameElement = document.getElementById('item-name');
     itemNameElement.innerText = item.name;
+    itemNameElement = document.getElementById('item-name2');
+    itemNameElement.innerText = item.name;
 }
 
 function loadItemColorText() {
@@ -60,7 +62,7 @@ function showColor() {
     var div_colors = document.getElementById("colors");
     var string = '';
     allColors.forEach(color => {
-        string += `<div class="col-md-2 col-sm-3 col-xs-3">
+        string += `<div class="col-md-3 col-sm-3 col-xs-3">
         <button type="button" class="btn btn-outline-primary btn-color" onclick=selectColor(this) style="margin-top: 5px;">${color}</button>
         </div>`
     });
@@ -75,7 +77,7 @@ function showStorage() {
     var div_storages = document.getElementById("storages");
     var string = '<div class="col-md-1"></div>';
     allStorages.forEach(storage => {
-        string += `<div class="col-md-2 col-sm-3 col-xs-3">
+        string += `<div class="col-md-3 col-sm-3 col-xs-3">
         <button type="button" class="btn btn-outline-primary btn-storage" onclick=selectStorage(this) style="margin-top: 5px;">${storage}</button>
         </div>`
     });
