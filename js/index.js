@@ -1,25 +1,63 @@
 var vars = getUrlVars();
 var items;
+var isSearchBarActive = false;
+var isNavBarActive = true;
+var isShowNavBar = false;
 
 
 $(document).ready(function() {
     loadCatogories();
+    $(".icon-1").click(function() {
+        if (isShowNavBar) {
+            $(".navbar-toggle").click();
+        }
+        if ($(window).width() < 434) {
+            if (isSearchBarActive == false) {
+                $(".main-navbar").css("width", "24%");
+                $("#navbar-title").hide();
+                $(".main-searchbar").css("width", "50%");
+            } else {
+                $(".main-navbar").css("width", "50%");
+                $("#navbar-title").show();
+                $(".main-searchbar").css("width", "25%");
+            }
+            isSearchBarActive = !isSearchBarActive;
+            isNavBarActive = !isNavBarActive;
+        }
+        $(".input").toggleClass("active");
+        $(".search-box-container").toggleClass("active");
+    })
+
+    $(".navbar-toggle").click(function() {
+        if (isNavBarActive == false) {
+            $("#navbar-title").hide();
+            $(".icon-1").click();
+        } else {
+            $("#navbar-title").show();
+        }
+        isShowNavBar = !isShowNavBar;
+    })
 });
 
 
 function loadCatogories() {
-    items = getData();
+    var searchString = vars['search'];
+    if (searchString) {
+        loadDataFromCSV(loadItem);
+    } else {
 
+    }
+}
+
+
+function loadItem() {
+    items = getData();
+    var showingItem;
+    var searchString = vars['search'];
     if (items) {
-        var showingItem;
-        var searchString = vars['search'];
-        if (searchString) {
-            showingItem = items.filter((item) => item.name.toLowerCase().split(" ").join("-").includes(searchString));
-            // hide category
-            showItem(showingItem);
-        } else {
-            // hide items, show category
-        }
+        showingItem = items.filter((item) => item.name.toLowerCase().split(" ").join("-").includes(searchString));
+        document.getElementById("list-category").style.display = "none";
+        showItem(showingItem);
     }
 }
 
@@ -52,12 +90,4 @@ function getUrlVars() {
         vars[key] = value;
     });
     return vars;
-}
-
-function searchItem() {
-    var searchString = document.getElementById("search-input").value;
-    if (searchString) {
-        showingItem = items.filter((item) => item.name.includes("searchString"));
-        showItem(showingItem);
-    }
 }

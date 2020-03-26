@@ -7,9 +7,43 @@ var allStorages = [];
 var selectedItem;
 var selectedColor;
 var selectedStorage;
+var isSearchBarActive = false;
+var isNavBarActive = true;
+var isShowNavBar = false;
 
 $(document).ready(function() {
     loadDataFromCSV(loadItemAndButtons);
+
+    $(".icon-1").click(function() {
+        if (isShowNavBar) {
+            $(".navbar-toggle").click();
+        }
+        if ($(window).width() < 434) {
+            if (isSearchBarActive == false) {
+                $(".main-navbar").css("width", "24%");
+                $("#navbar-title").hide();
+                $(".main-searchbar").css("width", "50%");
+            } else {
+                $(".main-navbar").css("width", "50%");
+                $("#navbar-title").show();
+                $(".main-searchbar").css("width", "25%");
+            }
+            isSearchBarActive = !isSearchBarActive;
+            isNavBarActive = !isNavBarActive;
+        }
+        $(".input").toggleClass("active");
+        $(".search-box-container").toggleClass("active");
+    })
+
+    $(".navbar-toggle").click(function() {
+        if (isNavBarActive == false) {
+            $("#navbar-title").hide();
+            $(".icon-1").click();
+        } else {
+            $("#navbar-title").show();
+        }
+        isShowNavBar = !isShowNavBar;
+    })
 });
 
 function loadItemAndButtons() {

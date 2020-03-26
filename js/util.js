@@ -5,10 +5,10 @@ var items;
 
 $(document).ready(function() {
     loadDataFromCSV(loadNavigation);
-    
+
 });
 
-function loadNavigation(){
+function loadNavigation() {
     items = getData();
 
     if (items) {
@@ -60,7 +60,10 @@ function getUrlVars() {
 
 
 function searchItem() {
-    var searchString = document.getElementById("search-input").value;
-    searchString = searchString.toLowerCase().split(" ").join("-");
-    window.location = "./index.html?search=" + searchString;
+    var searchString = document.getElementById("input-search").value;
+
+    if (searchString != "") {
+        searchString = searchString.toLowerCase().split(" ").join("-");
+        window.location = "./index.html?search=" + searchString;
+    }
 }
