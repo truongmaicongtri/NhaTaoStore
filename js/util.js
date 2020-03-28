@@ -1,6 +1,7 @@
 var vars = getUrlVars();
 var categoryNames = ["iphone", "ipad", "macbook", "apple-watch", "phu-kien", "may-99"];
 var items;
+var isDrawerEnable = false;
 
 
 $(document).ready(function() {
@@ -66,4 +67,21 @@ function searchItem() {
         searchString = searchString.toLowerCase().split(" ").join("-");
         window.location = "./index.html?search=" + searchString;
     }
+}
+
+/* Set the width of the side navigation to 250px */
+function openNav() {
+    if (isDrawerEnable) {
+        closeNav();
+        isDrawerEnable = false;
+        return;
+    }
+    document.getElementById("mySidenav").style.width = "250px";
+    isDrawerEnable = true;
+}
+
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    isDrawerEnable = false;
 }

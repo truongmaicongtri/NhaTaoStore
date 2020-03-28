@@ -1,5 +1,5 @@
 Category;Name;ImageUrl_1;ImageUrl_2;ImageUrl_3;ImageUrl_4;Color;Storage;Price
-iphone;IPhone 11;img/showcase/item1.jpg;img/showcase/item2.jpg;img/showcase/item3.jpg;img/showcase/item4.jpg;;;
+iphone;iPhone 11;img/showcase/item1.jpg;img/showcase/item2.jpg;img/showcase/item3.jpg;img/showcase/item4.jpg;;;
 ;;;;;;Đỏ;64GB;15.100.000
 ;;;;;;Vàng;64GB;15.200.000
 ;;;;;;Xanh;64GB;15.300.000
@@ -7,7 +7,7 @@ iphone;IPhone 11;img/showcase/item1.jpg;img/showcase/item2.jpg;img/showcase/item
 ;;;;;;Đỏ;128GB;15.500.000
 ;;;;;;Vàng;128GB;15.600.000
 ;;;;;;Xanh;128GB;15.700.000
-iphone;IPhone 11 Pro;img/showcase/item2.jpg;img/showcase/item2.jpg;img/showcase/item3.jpg;img/showcase/item4.jpg;;;
+iphone;iPhone 11 Pro;img/showcase/item2.jpg;img/showcase/item2.jpg;img/showcase/item3.jpg;img/showcase/item4.jpg;;;
 ;;;;;;Đỏ;64GB;15.100.000
 ;;;;;;Vàng;64GB;15.200.000
 ;;;;;;Xanh;64GB;15.300.000
@@ -15,16 +15,7 @@ iphone;IPhone 11 Pro;img/showcase/item2.jpg;img/showcase/item2.jpg;img/showcase/
 ;;;;;;Đỏ;128GB;15.500.000
 ;;;;;;Vàng;128GB;15.600.000
 ;;;;;;Xanh;128GB;15.700.000
-iphone;IPhone 11 Pro Max;img/showcase/item3.jpg;img/showcase/item2.jpg;img/showcase/item3.jpg;img/showcase/item4.jpg;;;
-;;;;;;Đỏ;64GB;15.100.000
-;;;;;;Vàng;64GB;15.200.000
-;;;;;;Xanh;64GB;15.300.000
-;;;;;;Tím;64GB;15.400.000
-;;;;;;Đỏ;128GB;15.500.000
-;;;;;;Vàng;128GB;15.600.000
-;;;;;;Xanh;128GB;15.700.000
-;;;;;;Tím;128GB;15.800.000
-iphone;Iphone 9;img/showcase/item4.jpg;img/showcase/item2.jpg;img/showcase/item3.jpg;img/showcase/item4.jpg;;;
+iphone;iPhone 11 Pro Max;img/showcase/item3.jpg;img/showcase/item2.jpg;img/showcase/item3.jpg;img/showcase/item4.jpg;;;
 ;;;;;;Đỏ;64GB;15.100.000
 ;;;;;;Vàng;64GB;15.200.000
 ;;;;;;Xanh;64GB;15.300.000
@@ -33,7 +24,7 @@ iphone;Iphone 9;img/showcase/item4.jpg;img/showcase/item2.jpg;img/showcase/item3
 ;;;;;;Vàng;128GB;15.600.000
 ;;;;;;Xanh;128GB;15.700.000
 ;;;;;;Tím;128GB;15.800.000
-iphone;IPhone 8 Plus;img/showcase/item1.jpg;img/showcase/item2.jpg;img/showcase/item3.jpg;img/showcase/item4.jpg;;;
+iphone;iPhone 9;img/showcase/item4.jpg;img/showcase/item2.jpg;img/showcase/item3.jpg;img/showcase/item4.jpg;;;
 ;;;;;;Đỏ;64GB;15.100.000
 ;;;;;;Vàng;64GB;15.200.000
 ;;;;;;Xanh;64GB;15.300.000
@@ -42,7 +33,7 @@ iphone;IPhone 8 Plus;img/showcase/item1.jpg;img/showcase/item2.jpg;img/showcase/
 ;;;;;;Vàng;128GB;15.600.000
 ;;;;;;Xanh;128GB;15.700.000
 ;;;;;;Tím;128GB;15.800.000
-iphone;IPhone 8;img/showcase/item2.jpg;img/showcase/item2.jpg;img/showcase/item3.jpg;img/showcase/item4.jpg;;;
+iphone;iPhone 8 Plus;img/showcase/item1.jpg;img/showcase/item2.jpg;img/showcase/item3.jpg;img/showcase/item4.jpg;;;
 ;;;;;;Đỏ;64GB;15.100.000
 ;;;;;;Vàng;64GB;15.200.000
 ;;;;;;Xanh;64GB;15.300.000
@@ -51,7 +42,7 @@ iphone;IPhone 8;img/showcase/item2.jpg;img/showcase/item2.jpg;img/showcase/item3
 ;;;;;;Vàng;128GB;15.600.000
 ;;;;;;Xanh;128GB;15.700.000
 ;;;;;;Tím;128GB;15.800.000
-iphone;Iphone 7 Plus;img/showcase/item3.jpg;img/showcase/item2.jpg;img/showcase/item3.jpg;img/showcase/item4.jpg;;;
+iphone;iPhone 8;img/showcase/item2.jpg;img/showcase/item2.jpg;img/showcase/item3.jpg;img/showcase/item4.jpg;;;
 ;;;;;;Đỏ;64GB;15.100.000
 ;;;;;;Vàng;64GB;15.200.000
 ;;;;;;Xanh;64GB;15.300.000
@@ -60,7 +51,16 @@ iphone;Iphone 7 Plus;img/showcase/item3.jpg;img/showcase/item2.jpg;img/showcase/
 ;;;;;;Vàng;128GB;15.600.000
 ;;;;;;Xanh;128GB;15.700.000
 ;;;;;;Tím;128GB;15.800.000
-iphone;Iphone 6S Plus;img/showcase/item4.jpg;img/showcase/item2.jpg;img/showcase/item3.jpg;img/showcase/item4.jpg;;;
+iphone;iPhone 7 Plus;img/showcase/item3.jpg;img/showcase/item2.jpg;img/showcase/item3.jpg;img/showcase/item4.jpg;;;
+;;;;;;Đỏ;64GB;15.100.000
+;;;;;;Vàng;64GB;15.200.000
+;;;;;;Xanh;64GB;15.300.000
+;;;;;;Tím;64GB;15.400.000
+;;;;;;Đỏ;128GB;15.500.000
+;;;;;;Vàng;128GB;15.600.000
+;;;;;;Xanh;128GB;15.700.000
+;;;;;;Tím;128GB;15.800.000
+iphone;iPhone 6S Plus;img/showcase/item4.jpg;img/showcase/item2.jpg;img/showcase/item3.jpg;img/showcase/item4.jpg;;;
 ;;;;;;Đỏ;64GB;15.100.000
 ;;;;;;Vàng;64GB;15.200.000
 ;;;;;;Xanh;64GB;15.300.000

@@ -29,6 +29,52 @@
 </head>
 
 <body class="page-index has-hero">
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+        <div class="sideNav-list">
+            <ul class="nav navbar-nav" id="main-menu">
+                <li>
+                    <a href="./category.html?category=iphone">iPhone</a>
+                    <div class="popup" id="iphone" style="visibility: hidden; position: fixed;">
+                    </div>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav" id="main-menu">
+                <li>
+                    <a href="./category.html?category=ipad">iPad</a>
+                    <div class="popup" id="ipad" style="visibility: hidden; position: fixed;"></div>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav" id="main-menu">
+                <li>
+                    <a href="./category.html?category=macbook">Macbook</a>
+                    <div class="popup" id="macbook" style="visibility: hidden; position: fixed;"></div>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav" id="main-menu">
+                <li>
+                    <a href="./category.html?category=apple-watch">Apple Watch</a>
+                    <div class="popup" id="apple-watch" style="visibility: hidden; position: fixed;"></div>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav" id="main-menu">
+                <li>
+                    <a href="./category.html?category=phu-kien">Phụ Kiện Apple</a>
+                    <div class="popup" id="phu-kien" style="visibility: hidden; position: fixed;"></div>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav" id="main-menu">
+                <li>
+                    <a href="./category.html?category=may-99">Máy 99%</a>
+                    <div class="popup" id="may-99" style="visibility: hidden; position: fixed;"></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
     <!-- Load Facebook SDK for JavaScript -->
     <div id="fb-root"></div>
     <script>
@@ -66,7 +112,7 @@
                                 <img src="img/logo.png" alt="Nha Tao Logo" style="margin: auto; height: 50px!important; width: auto!important;" width="50" height="50">
                             </a>
                         </div>
-                        <div class="col-md-3 col-sm-3 col-xs-3 main-searchbar">
+                        <div class="col-md-3 col-sm-3 col-xs-6 main-searchbar">
                             <div class="search-box-container">
                                 <!-- <div class="icon-items icon-items-1">
                                     <i class="fas fa-address-book"></i>
@@ -96,7 +142,7 @@
                             <input id="search-input" type="text" placeholder="Bạn tìm gì.." name="search">
                             <button id="search-button" type="submit" onclick=searchItem()><i class="fa fa-search"></i></button>
                         </div> -->
-                        <div class="col-md-8 col-sm-7 col-xs-6 main-navbar">
+                        <div class="col-md-8 col-sm-7 main-navbar">
                             <div class="navbar navbar-default" style="margin: 0; border-radius: 8px; z-index: 999;">
                                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false"> <span class="sr-only">Toggle navigation</span>
                                         <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
@@ -141,6 +187,11 @@
                                         </li>
                                     </ul>
                                 </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-3 small-navbar">
+                            <div class="bar-box-container">
+                                <button class="icon-items icon-1" id="bar-button" type="submit" onclick=openNav()><i class="fa fa-bars" aria-hidden="true"></i></button>
                             </div>
                         </div>
                     </div>
@@ -197,11 +248,11 @@
         <!--Showcase-->
         <div class="showcase block-border-bottom-grey">
             <div class="container">
-                <h2 class="block-title">
+                <!-- <h2 class="block-title">
                     Sản phẩm
-                </h2>
+                </h2> -->
                 <div class="row" id="list-category">
-                    <div class="col-md-4">
+                    <div class="col-md-4 col-sm-4 col-xs-4">
                         <a href="./category.html?category=iphone" class="overlay-wrapper">
                             <img src="img/showcase/item1.jpg" alt="Iphone image" class="img-responsive underlay">
                             <span class="overlay">
@@ -210,11 +261,11 @@
                         </a>
                         <div class="item-details bg-noise">
                             <h4 class="category-title">
-                                <a href="./category.html?category=iphone">IPhone</a>
+                                <a href="./category.html?category=iphone">iPhone</a>
                             </h4>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 col-sm-4 col-xs-4">
                         <a href="./category.html?category=ipad" class="overlay-wrapper">
                             <img src="img/showcase/ipad1.jpg" alt="iPad image" class="img-responsive underlay">
                             <span class="overlay">
@@ -227,7 +278,7 @@
                             </h4>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 col-sm-4 col-xs-4">
                         <a href="./category.html?category=macbook" class="overlay-wrapper">
                             <img src="img/showcase/macbook4.jpg" alt="Macbook image" class="img-responsive underlay">
                             <span class="overlay">
@@ -240,7 +291,7 @@
                             </h4>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 col-sm-4 col-xs-4">
                         <a href="./category.html?category=apple-watch" class="overlay-wrapper">
                             <img src="img/showcase/apple-watch-1.jpg" alt="Apple Watch image" class="img-responsive underlay">
                             <span class="overlay">
@@ -253,7 +304,7 @@
                             </h4>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 col-sm-4 col-xs-4">
                         <a href="./category.html?category=phu-kien" class="overlay-wrapper">
                             <img src="img/showcase/item2.jpg" alt="Accessories image" class="img-responsive underlay">
                             <span class="overlay">
@@ -266,7 +317,7 @@
                             </h4>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 col-sm-4 col-xs-4">
                         <a href="./category.html?category=may-99" class="overlay-wrapper">
                             <img src="img/showcase/macbook4.jpg" alt="Máy 99% image" class="img-responsive underlay">
                             <span class="overlay">
@@ -332,21 +383,21 @@
                     <div class="col-md-5 col-sm-7 col-xs-6">
                         <address>
                             <h4 class="text-uppercase">
-                                ĐỊA CHỈ CỦA NHÀ TÁO STORE:
-                            </h4>
+                                NHÀ TÁO STORE:
+                            </h4>     
+                            <div style="padding: 3px; margin-top: 7px;">
+                                <i class="fa fa-map-pin fa-fw text-primary"></i>
+                                <span>40A, ĐƯỜNG SỐ 6, P.10, Q.TÂN BÌNH, TPHCM</span>
+                            </div>  
                             <strong></strong>                         
                             <div style="padding: 3px; margin-top: 7px;">
                                 <i class="fa fa-phone fa-fw text-primary"></i>
                                 <span>093 8883555</span>
-                            </div>
+                            </div> 
                             <div style="padding: 3px; margin-top: 7px;">
                                 <i class="fa fa-envelope-o fa-fw text-primary"></i>
                                 <span>nhataostore@gmail.com</span>
-                            </div>  
-                            <div style="padding: 3px; margin-top: 7px;">
-                                <i class="fa fa-map-pin fa-fw text-primary"></i>
-                                <span>40A, ĐƯỜNG SỐ 6, P.10, Q.TÂN BÌNH, TPHCM</span>
-                            </div>         
+                            </div>        
                         </address>
                     </div>
                     <div class="col-md-3 col-sm-4 col-xs-6">

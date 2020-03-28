@@ -366,6 +366,14 @@
     font-weight: 400!important;
 }
 
+.item-name {
+    display: initial;
+    border: 1px solid;
+    padding: 2px 10px;
+    border-radius: 10px;
+    font-weight: 400!important;
+}
+
 #item-name2 {
     border: 1px solid;
     padding: 2px 10px;
@@ -1544,7 +1552,7 @@
 }
 
 .text-primary {
-    color: #34548a;
+    color: #fff;
 }
 
 .text-secondary {
@@ -3066,17 +3074,21 @@ ul.nav-tabs.nav-tabs-right>li:last-child {
 
 /* Style the submit button */
 
-#search-button {
+#bar-button {
     float: left;
-    height: 34px;
-    padding: 2px;
-    background: #d9c129;
+    width: 100%;
+    background: #000;
     color: white;
     font-size: 17px;
     border: 1px solid grey;
-    border-left: none;
     /* Prevent double borders */
     cursor: pointer;
+    height: 100%;
+    border-radius: 5px;
+}
+
+#bar-button:hover {
+    background: #0b7dda;
 }
 
 #search-button:hover {
@@ -3085,21 +3097,15 @@ ul.nav-tabs.nav-tabs-right>li:last-child {
 
 #search-button {
     float: left;
-    /* width: 20%; */
-    padding: 10px;
-    background: #e0d41f;
+    width: 40px;
+    background: #000;
     color: white;
     font-size: 17px;
     border: 1px solid grey;
-    border-left: none;
     /* Prevent double borders */
     cursor: pointer;
     height: 100%;
     border-radius: 5px;
-}
-
-#search-button:hover {
-    background: #f2ea72;
 }
 
 .btn-color {
@@ -3120,7 +3126,7 @@ ul.nav-tabs.nav-tabs-right>li:last-child {
 }
 
 #list-category>div {
-    padding: 25px 50px;
+    padding: 3% 6%;
 }
 
 #list-category a {
@@ -3152,13 +3158,23 @@ ul.nav-tabs.nav-tabs-right>li:last-child {
     width: 100%; */
     padding: 0 10px;
     height: 60px;
-    padding-top: 5px;
+    padding-top: 10px;
 }
 
 .search-box-container {
-    max-width: 50px;
-    height: 50px;
+    max-width: 40px;
+    height: 40px;
     margin: 0 auto;
+    display: flex;
+    background: #e6e6e6;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+}
+
+.bar-box-container {
+    max-width: 40px;
+    height: 40px;
+    margin: 0 0 0 auto;
     display: flex;
     background: #e6e6e6;
     border-radius: 5px;
@@ -3196,8 +3212,14 @@ ul.nav-tabs.nav-tabs-right>li:last-child {
 }
 
 .search-box .input.active {
-    width: 200px;
+    width: 100%;
     padding: 0 10px;
+}
+
+@media (min-width:1199px) {
+    .search-box .input.active {
+        width: 210px;
+    }
 }
 
 .search-box-container.active {
@@ -3205,23 +3227,22 @@ ul.nav-tabs.nav-tabs-right>li:last-child {
 }
 
 @media screen and (max-width: 500px) {
-    .search-box .input.active {
-        width: 125px;
-    }
     .search-box-container.active {
         max-width: 425px;
     }
     .main-searchbar {
         padding: 0;
-        padding-top: 5px;
+        padding-top: 10px;
     }
 }
 
-@media (max-width:991px) {
+@media (min-width:530px) and (max-width:767px) {
     .search-box .input.active {
-        width: 130px;
+        width: 210px;
     }
 }
+
+@media (max-width:991px) {}
 
 @media (min-width:768px) and (max-width:991px) {
     .navbar-default .navbar-nav li>a:not(.btn) {
@@ -3229,6 +3250,23 @@ ul.nav-tabs.nav-tabs-right>li:last-child {
         line-height: 50px;
         padding: 0px 6px;
         font-size: 11px;
+    }
+}
+
+@media (max-width:767px) {
+    .main-navbar {
+        display: none;
+    }
+}
+
+.small-navbar {
+    height: 60px;
+    padding-top: 10px;
+}
+
+@media (min-width:768px) {
+    .small-navbar {
+        display: none;
     }
 }
 
@@ -3242,4 +3280,83 @@ ul.nav-tabs.nav-tabs-right>li:last-child {
     font-size: 18px;
     font-weight: 100;
     padding-left: 55px;
+}
+
+
+/* The side navigation menu */
+
+.sidenav {
+    height: 100%;
+    /* 100% Full-height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    z-index: 20;
+    /* Stay on top */
+    top: 0;
+    /* Stay at the top */
+    left: 0;
+    background-color: #111;
+    /* Black*/
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 60px;
+    /* Place content 60px from the top */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in the sidenav */
+}
+
+
+/* The navigation menu links */
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+
+/* When you mouse over the navigation links, change their color */
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+
+/* Position and style the close button (top right corner) */
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+.sideNav-list {
+    margin-left: 20px;
 }
