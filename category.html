@@ -37,38 +37,38 @@
             <ul class="nav navbar-nav" id="main-menu">
                 <li>
                     <a href="./category.html?category=iphone">iPhone</a>
-                    <div class="popup" id="iphone" style="visibility: hidden; position: fixed;">
+                    <div class="popup" style="visibility: hidden; position: fixed;">
                     </div>
                 </li>
             </ul>
             <ul class="nav navbar-nav" id="main-menu">
                 <li>
                     <a href="./category.html?category=ipad">iPad</a>
-                    <div class="popup" id="ipad" style="visibility: hidden; position: fixed;"></div>
+                    <div class="popup" style="visibility: hidden; position: fixed;"></div>
                 </li>
             </ul>
             <ul class="nav navbar-nav" id="main-menu">
                 <li>
                     <a href="./category.html?category=macbook">Macbook</a>
-                    <div class="popup" id="macbook" style="visibility: hidden; position: fixed;"></div>
+                    <div class="popup" style="visibility: hidden; position: fixed;"></div>
                 </li>
             </ul>
             <ul class="nav navbar-nav" id="main-menu">
                 <li>
                     <a href="./category.html?category=apple-watch">Apple Watch</a>
-                    <div class="popup" id="apple-watch" style="visibility: hidden; position: fixed;"></div>
+                    <div class="popup" style="visibility: hidden; position: fixed;"></div>
                 </li>
             </ul>
             <ul class="nav navbar-nav" id="main-menu">
                 <li>
                     <a href="./category.html?category=phu-kien">Phụ Kiện Apple</a>
-                    <div class="popup" id="phu-kien" style="visibility: hidden; position: fixed;"></div>
+                    <div class="popup" style="visibility: hidden; position: fixed;"></div>
                 </li>
             </ul>
             <ul class="nav navbar-nav" id="main-menu">
                 <li>
                     <a href="./category.html?category=may-99">Máy 99%</a>
-                    <div class="popup" id="may-99" style="visibility: hidden; position: fixed;"></div>
+                    <div class="popup" style="visibility: hidden; position: fixed;"></div>
                 </li>
             </ul>
         </div>
@@ -94,7 +94,7 @@
     </script>
 
     <!-- Your customer chat code -->
-    <div class="fb-customerchat" attribution=setup_tool page_id="107694280859369" theme_color="#44bec7" logged_in_greeting="hi there" logged_out_greeting="hi there">
+    <div class="fb-customerchat" attribution=setup_tool page_id="108906770689765" logged_in_greeting="Xin chào, mình có thể giúp gì cho bạn không?" logged_out_greeting="Xin chào, mình có thể giúp gì cho bạn không?">
     </div>
 
     <!-- ======== @Region: #header ======== -->
@@ -105,36 +105,15 @@
             <div class="header">
                 <div class="header-inner container">
                     <div class="row">
-                        <div class="col-md-1 col-sm-2 col-xs-3" style="height: 60px;">
+                        <div class="col-xs-2 small-navbar">
+                            <div class="bar-box-container">
+                                <button class="icon-items icon-1" id="bar-button" type="submit" onclick=openNav()><i class="fa fa-bars" aria-hidden="true"></i></button>
+                            </div>
+                        </div>
+                        <div class="col-md-1 col-sm-2 col-xs-8 logo" style="height: 60px;">
                             <a class="navbar-brand" href="index.html" title="Home">
                                 <img src="img/logo.png" alt="Nha Tao Logo" style="margin: auto; height: 50px!important; width: auto!important;" width="50" height="50">
                             </a>
-                        </div>
-                        <div class="col-md-3 col-sm-3 col-xs-6 main-searchbar">
-                            <div class="search-box-container">
-                                <!-- <div class="icon-items icon-items-1">
-                                    <i class="fas fa-address-book"></i>
-                                </div>
-                                <div class="icon-items">
-                                    <i class="fas fa-envelope-square"></i>
-                                </div>
-                                <div class="icon-items">
-                                    <i class="fas fa-cogs"></i>
-                                </div>
-                                <div class="icon-items">
-                                    <i class="fas fa-trash"></i>
-                                </div> -->
-
-                                <div class="search-box">
-                                    <input id="input-search" type="text" class="input" placeholder="Bạn tìm gì..">
-                                </div>
-
-                                <!-- <div class="icon-items icon-1">
-                                    <button id="search-button" type="submit" onclick=searchItem()><i class="fa fa-search"></i></button>
-                                </div> -->
-                                <button class="icon-items icon-1" id="search-button" type="submit" onclick=searchItem()><i class="fa fa-search"></i></button>
-
-                            </div>
                         </div>
                         <!-- <div class="col-md-3 col-xs-7" style="height: 60px; padding-top: 7px;">
                             <input id="search-input" type="text" placeholder="Bạn tìm gì.." name="search">
@@ -187,9 +166,38 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xs-3 small-navbar">
-                            <div class="bar-box-container">
-                                <button class="icon-items icon-1" id="bar-button" type="submit" onclick=openNav()><i class="fa fa-bars" aria-hidden="true"></i></button>
+                        <div class="col-md-3 col-sm-3 col-xs-2 main-searchbar">
+                            <div class="search-box-container">
+                                <!-- <div class="icon-items icon-items-1">
+                                    <i class="fas fa-address-book"></i>
+                                </div>
+                                <div class="icon-items">
+                                    <i class="fas fa-envelope-square"></i>
+                                </div>
+                                <div class="icon-items">
+                                    <i class="fas fa-cogs"></i>
+                                </div>
+                                <div class="icon-items">
+                                    <i class="fas fa-trash"></i>
+                                </div> -->
+
+                                <div class="search-box">
+                                    <input id="input-search" type="text" class="input" placeholder="Bạn tìm gì..">
+                                </div>
+
+                                <!-- <div class="icon-items icon-1">
+                                    <button id="search-button" type="submit" onclick=searchItem()><i class="fa fa-search"></i></button>
+                                </div> -->
+                                <button class="icon-items icon-1" id="search-button" type="submit" onclick=searchItem()><i class="fa fa-search"></i></button>
+
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-3 col-xs-2 actived-searchbar">
+                            <div class="search-box-container active">
+                                <div class="search-box">
+                                    <input id="input-search-actived" type="text" class="input active" placeholder="Bạn tìm gì..">
+                                </div>
+                                <button class="icon-items icon-1 active" id="search-button" type="submit" onclick=searchItem()><i class="fa fa-search"></i></button>
                             </div>
                         </div>
                     </div>
@@ -301,7 +309,7 @@
                     <div class="col-md-5 col-sm-7 col-xs-6">
                         <address>
                             <h4 class="text-uppercase">
-                                NHÀ TÁO STORE:
+                                NHÀ TÁO STORE
                             </h4>     
                             <div style="padding: 3px; margin-top: 7px;">
                                 <i class="fa fa-map-pin fa-fw text-primary"></i>
@@ -320,12 +328,12 @@
                     </div>
                     <div class="col-md-3 col-sm-4 col-xs-6">
                         <h4 class="text-uppercase">
-                            THEO DÕI NHÀ TÁO TRÊN:
+                            THEO DÕI NHÀ TÁO TRÊN
                         </h4>
                         <!--social media icons-->
                         <div class="social-media social-media-stacked">
                             <!--@todo: replace with company social media details-->
-                            <a href="#"><i class="fa fa-facebook fa-fw"></i> Facebook</a>
+                            <a href="https://www.facebook.com/nhataostore/" target="_blank"><i class="fa fa-facebook fa-fw"></i> Facebook</a>
                             <a href="#"><i class="fa fa-twitter fa-fw"></i> Twitter</a>
                         </div>
                     </div>

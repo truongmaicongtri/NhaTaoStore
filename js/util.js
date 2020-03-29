@@ -63,6 +63,10 @@ function getUrlVars() {
 function searchItem() {
     var searchString = document.getElementById("input-search").value;
 
+    if (searchString == "") {
+        searchString = document.getElementById("input-search-actived").value;
+    }
+
     if (searchString != "") {
         searchString = searchString.toLowerCase().split(" ").join("-");
         window.location = "./index.html?search=" + searchString;

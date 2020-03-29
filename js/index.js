@@ -11,21 +11,20 @@ $(document).ready(function() {
         // if (isShowNavBar) {
         //     $(".navbar-toggle").click();
         // }
-        // if ($(window).width() < 434) {
-        //     if (isSearchBarActive == false) {
-        //         $(".main-navbar").css("width", "24%");
-        //         $("#navbar-title").hide();
-        //         $(".main-searchbar").css("width", "50%");
-        //     } else {
-        //         $(".main-navbar").css("width", "50%");
-        //         $("#navbar-title").show();
-        //         $(".main-searchbar").css("width", "25%");
-        //     }
-        //     isSearchBarActive = !isSearchBarActive;
-        //     isNavBarActive = !isNavBarActive;
-        // }
-        $(".input").toggleClass("active");
-        $(".search-box-container").toggleClass("active");
+        if ($(window).width() < 768) {
+            if (isSearchBarActive == false) {
+                $(".logo").css("width", "24%");
+                $(".main-searchbar").css("width", "55%");
+            } else {
+                $(".logo").css("width", "66%");
+                $(".main-searchbar").css("width", "16%");
+            }
+            isSearchBarActive = !isSearchBarActive;
+            // isNavBarActive = !isNavBarActive;
+            $(".input").toggleClass("active");
+            $(".search-box-container").toggleClass("active");
+            $("#search-button").toggleClass("active");
+        }
     })
 
     // $(".navbar-toggle").click(function() {

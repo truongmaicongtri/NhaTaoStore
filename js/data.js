@@ -2,10 +2,10 @@ var items2 = [];
 var data = [{
         name: "IPhone 11",
         imageUrl: [
-            "img/showcase/item1.jpg",
-            "img/showcase/item2.jpg",
-            "img/showcase/item3.jpg",
-            "img/showcase/item4.jpg"
+            "img/products/item1.jpg",
+            "img/products/item2.jpg",
+            "img/products/item3.jpg",
+            "img/products/item4.jpg"
         ],
         category: "iphone",
         prices: [{
@@ -53,10 +53,10 @@ var data = [{
     {
         name: "IPhone 11 Pro",
         imageUrl: [
-            "img/showcase/item2.jpg",
-            "img/showcase/item2.jpg",
-            "img/showcase/item3.jpg",
-            "img/showcase/item4.jpg"
+            "img/products/item2.jpg",
+            "img/products/item2.jpg",
+            "img/products/item3.jpg",
+            "img/products/item4.jpg"
         ],
         category: "iphone",
         prices: [{
@@ -104,10 +104,10 @@ var data = [{
     {
         name: "IPhone 11 Pro Max",
         imageUrl: [
-            "img/showcase/item3.jpg",
-            "img/showcase/item2.jpg",
-            "img/showcase/item3.jpg",
-            "img/showcase/item4.jpg"
+            "img/products/item3.jpg",
+            "img/products/item2.jpg",
+            "img/products/item3.jpg",
+            "img/products/item4.jpg"
         ],
         category: "iphone",
         prices: [{
@@ -155,10 +155,10 @@ var data = [{
     {
         name: "Iphone 9",
         imageUrl: [
-            "img/showcase/item4.jpg",
-            "img/showcase/item2.jpg",
-            "img/showcase/item3.jpg",
-            "img/showcase/item4.jpg"
+            "img/products/item4.jpg",
+            "img/products/item2.jpg",
+            "img/products/item3.jpg",
+            "img/products/item4.jpg"
         ],
         category: "iphone",
         prices: [{
@@ -206,10 +206,10 @@ var data = [{
     {
         name: "IPhone 8 Plus",
         imageUrl: [
-            "img/showcase/item1.jpg",
-            "img/showcase/item2.jpg",
-            "img/showcase/item3.jpg",
-            "img/showcase/item4.jpg"
+            "img/products/item1.jpg",
+            "img/products/item2.jpg",
+            "img/products/item3.jpg",
+            "img/products/item4.jpg"
         ],
         category: "iphone",
         prices: [{
@@ -257,10 +257,10 @@ var data = [{
     {
         name: "IPhone 8",
         imageUrl: [
-            "img/showcase/item2.jpg",
-            "img/showcase/item2.jpg",
-            "img/showcase/item3.jpg",
-            "img/showcase/item4.jpg"
+            "img/products/item2.jpg",
+            "img/products/item2.jpg",
+            "img/products/item3.jpg",
+            "img/products/item4.jpg"
         ],
         category: "iphone",
         prices: [{
@@ -308,10 +308,10 @@ var data = [{
     {
         name: "Iphone 7 Plus",
         imageUrl: [
-            "img/showcase/item3.jpg",
-            "img/showcase/item2.jpg",
-            "img/showcase/item3.jpg",
-            "img/showcase/item4.jpg"
+            "img/products/item3.jpg",
+            "img/products/item2.jpg",
+            "img/products/item3.jpg",
+            "img/products/item4.jpg"
         ],
         category: "iphone",
         prices: [{
@@ -359,10 +359,10 @@ var data = [{
     {
         name: "Iphone 6S Plus",
         imageUrl: [
-            "img/showcase/item4.jpg",
-            "img/showcase/item3.jpg",
-            "img/showcase/item1.jpg",
-            "img/showcase/item2.jpg"
+            "img/products/item4.jpg",
+            "img/products/item3.jpg",
+            "img/products/item1.jpg",
+            "img/products/item2.jpg"
         ],
         category: "iphone",
         prices: [{
@@ -410,10 +410,10 @@ var data = [{
     {
         name: "IPad Pro",
         imageUrl: [
-            "img/showcase/ipad3.jpg",
-            "img/showcase/ipad2.jpg",
-            "img/showcase/ipad3.jpg",
-            "img/showcase/ipad4.jpg"
+            "img/products/ipad3.jpg",
+            "img/products/ipad2.jpg",
+            "img/products/ipad3.jpg",
+            "img/products/ipad4.jpg"
         ],
         category: "ipad",
         prices: [{
@@ -461,10 +461,10 @@ var data = [{
     {
         name: "IPad Air",
         imageUrl: [
-            "img/showcase/ipad1.jpg",
-            "img/showcase/ipad2.jpg",
-            "img/showcase/ipad3.jpg",
-            "img/showcase/ipad4.jpg"
+            "img/products/ipad1.jpg",
+            "img/products/ipad2.jpg",
+            "img/products/ipad3.jpg",
+            "img/products/ipad4.jpg"
         ],
         category: "ipad",
         prices: [{
@@ -512,10 +512,10 @@ var data = [{
     {
         name: "Macbook Pro 2016",
         imageUrl: [
-            "img/showcase/macbook1.jpg",
-            "img/showcase/macbook2.jpg",
-            "img/showcase/macbook3.jpg",
-            "img/showcase/macbook4.jpg"
+            "img/products/macbook1.jpg",
+            "img/products/macbook2.jpg",
+            "img/products/macbook3.jpg",
+            "img/products/macbook4.jpg"
         ],
         category: "macbook",
         prices: [{
@@ -563,10 +563,10 @@ var data = [{
     {
         name: "Macbook Pro 2017",
         imageUrl: [
-            "img/showcase/macbook2.jpg",
-            "img/showcase/macbook2.jpg",
-            "img/showcase/macbook3.jpg",
-            "img/showcase/macbook4.jpg"
+            "img/products/macbook2.jpg",
+            "img/products/macbook2.jpg",
+            "img/products/macbook3.jpg",
+            "img/products/macbook4.jpg"
         ],
         category: "macbook",
         prices: [{
@@ -614,10 +614,10 @@ var data = [{
     {
         name: "Macbook pro 2018",
         imageUrl: [
-            "img/showcase/macbook3.jpg",
-            "img/showcase/macbook2.jpg",
-            "img/showcase/macbook3.jpg",
-            "img/showcase/macbook4.jpg"
+            "img/products/macbook3.jpg",
+            "img/products/macbook2.jpg",
+            "img/products/macbook3.jpg",
+            "img/products/macbook4.jpg"
         ],
         category: "macbook",
         prices: [{
@@ -665,10 +665,10 @@ var data = [{
     {
         name: "Macbook Pro 2019",
         imageUrl: [
-            "img/showcase/macbook4.jpg",
-            "img/showcase/macbook2.jpg",
-            "img/showcase/macbook3.jpg",
-            "img/showcase/macbook4.jpg"
+            "img/products/macbook4.jpg",
+            "img/products/macbook2.jpg",
+            "img/products/macbook3.jpg",
+            "img/products/macbook4.jpg"
         ],
         category: "macbook",
         prices: [{
@@ -716,10 +716,10 @@ var data = [{
     {
         name: "AW",
         imageUrl: [
-            "img/showcase/macbook4.jpg",
-            "img/showcase/macbook2.jpg",
-            "img/showcase/macbook3.jpg",
-            "img/showcase/macbook4.jpg"
+            "img/products/macbook4.jpg",
+            "img/products/macbook2.jpg",
+            "img/products/macbook3.jpg",
+            "img/products/macbook4.jpg"
         ],
         category: "apple-watch",
         prices: [{
@@ -767,10 +767,10 @@ var data = [{
     {
         name: "Phu kien 1",
         imageUrl: [
-            "img/showcase/macbook4.jpg",
-            "img/showcase/macbook2.jpg",
-            "img/showcase/macbook3.jpg",
-            "img/showcase/macbook4.jpg"
+            "img/products/macbook4.jpg",
+            "img/products/macbook2.jpg",
+            "img/products/macbook3.jpg",
+            "img/products/macbook4.jpg"
         ],
         category: "phu-kien",
         prices: [{
@@ -818,10 +818,10 @@ var data = [{
     {
         name: "Macbook Pro 2019 99%",
         imageUrl: [
-            "img/showcase/macbook4.jpg",
-            "img/showcase/macbook2.jpg",
-            "img/showcase/macbook3.jpg",
-            "img/showcase/macbook4.jpg"
+            "img/products/macbook4.jpg",
+            "img/products/macbook2.jpg",
+            "img/products/macbook3.jpg",
+            "img/products/macbook4.jpg"
         ],
         category: "may-99",
         prices: [{

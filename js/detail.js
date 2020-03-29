@@ -18,21 +18,20 @@ $(document).ready(function() {
         // if (isShowNavBar) {
         //     $(".navbar-toggle").click();
         // }
-        // if ($(window).width() < 434) {
-        //     if (isSearchBarActive == false) {
-        //         $(".main-navbar").css("width", "24%");
-        //         $("#navbar-title").hide();
-        //         $(".main-searchbar").css("width", "50%");
-        //     } else {
-        //         $(".main-navbar").css("width", "50%");
-        //         $("#navbar-title").show();
-        //         $(".main-searchbar").css("width", "25%");
-        //     }
-        //     isSearchBarActive = !isSearchBarActive;
-        //     isNavBarActive = !isNavBarActive;
-        // }
-        $(".input").toggleClass("active");
-        $(".search-box-container").toggleClass("active");
+        if ($(window).width() < 768) {
+            if (isSearchBarActive == false) {
+                $(".logo").css("width", "24%");
+                $(".main-searchbar").css("width", "55%");
+            } else {
+                $(".logo").css("width", "66%");
+                $(".main-searchbar").css("width", "16%");
+            }
+            isSearchBarActive = !isSearchBarActive;
+            // isNavBarActive = !isNavBarActive;
+            $(".input").toggleClass("active");
+            $(".search-box-container").toggleClass("active");
+            $("#search-button").toggleClass("active");
+        }
     })
 
     // $(".navbar-toggle").click(function() {
@@ -93,6 +92,16 @@ function loadItemColorText() {
 }
 
 function showColor() {
+    if (allColors.length == 0) {
+        document.getElementById("color-title").style.display = "none";
+        return;
+    }
+
+    if (allColors[0] == "") {
+        document.getElementById("color-title").style.display = "none";
+        return;
+    }
+
     var div_colors = document.getElementById("colors");
     var string = '';
     allColors.forEach(color => {
@@ -108,6 +117,15 @@ function showColor() {
 }
 
 function showStorage() {
+    if (allStorages.length == 0) {
+        document.getElementById("storage-title").style.display = "none";
+        return;
+    }
+    if (allStorages[0] == "") {
+        document.getElementById("color-title").style.display = "none";
+        return;
+    }
+
     var div_storages = document.getElementById("storages");
     var string = '<div class="col-md-1"></div>';
     allStorages.forEach(storage => {
